@@ -1,6 +1,6 @@
 const gameBoard = document.querySelector('#gameBoard');
-// const playerDisplay = document.querySelector('#player');
-// const infodisplay = document.querySelector('#info-display');
+const playerDisplay = document.querySelector('#player');
+const infodisplay = document.querySelector('#info-display');
 const width = 8;
 const startPieces = [
     rook , knight , bishop ,queen, king ,bishop , knight , rook ,
@@ -18,10 +18,10 @@ function createBoard() {
       square.classList.add('square')
       square.setAttribute('square-id', i)
       if (startPiece) {
-        const pieceElement = document.createElement('div'); // Create a span or any other element for the piece
+        const pieceElement = document.createElement('div'); 
         pieceElement.innerHTML = startPiece;
-        pieceElement.setAttribute('draggable', true); // Set draggable attribute here
-        square.appendChild(pieceElement); // Append the piece element to the square
+        pieceElement.setAttribute('draggable', true); 
+        square.appendChild(pieceElement); 
     }
       const row = Math.floor((63 -i)/8)+1
       if(row%2 === 0){

@@ -29,7 +29,7 @@ body{
     background-color: rgb(100, 45, 5);
 } 
 
-/* .square svg{
+.square svg{
     width: 45px;
     height: 45px;
     margin: 3px;
@@ -39,4 +39,4 @@ body{
 }
 .white{
     fill: whitesmoke;
-}   */
+}  
