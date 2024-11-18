@@ -1,0 +1,39 @@
+body{
+    background: url(image.jpg) no-repeat;
+    height: 100vh;/* Ensure padding and border are included in width/height */
+}
+
+#gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px auto; /* Center the board horizontally */
+    width: 480px;
+    height: 480px;
+    background-color: aliceblue;
+}
+.square {
+    width: 60px;
+    height: 60px;
+    display: flex; /* Center content in the square */
+    justify-content: center;
+    align-items: center;
+}
+.beige {
+    background-color:  rgb(153, 122, 81); /* Change to a lighter beige color */
+}
+
+.brown {
+    background-color: rgb(100, 45, 5);
+}
+
+.square svg{
+    width: 45px;
+    height: 45px;
+    margin: 3px;
+}
+.black{
+    fill: rgb(67, 59, 59);
+}
+.white{
+    fill: whitesmoke;
+}
